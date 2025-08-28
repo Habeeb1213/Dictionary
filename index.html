@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary | App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img id="logo-img" src="images/logo-black.png" alt="white-logo">
+            </div>
+
+            <i class="ri-menu-line hamburger"></i>
+
+
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Dictionary</a>
+                <a href="#">Favorites</a>
+                <a href="#">About</a>
+
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                    <i class="ri-moon-line"></i>
+                </label>
+            </div>
+            
+        </nav>
+        <div class="nav-spacer"></div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Dictionary</h1>
+            <form action="#" class="search-box" id="search-box">
+                <input type="text" name="search-input" id="search-input" placeholder="Search a word">
+                <button type="submit">
+                    <i class="ri-search-line"></i>
+                </button>
+            </form>
+
+            <p class="errorText"></p>
+            <div class="word-details">
+                <div class="word-info">
+                    <div class="word-name">
+                        <h2 id="word-text">
+                            play
+                        </h2>
+                        <p class="ppp">Meaning: </p>
+                        <p>
+                            <span id="type-txt"></span>
+                            <span id="phonetic-txt"></span>
+                        </p>
+                    </div>
+                    <button type="submit" id="sound-btn">
+                        <i class="ri-volume-up-fill"></i>
+                    </button>
+                </div>
+                <p class="definition" id="definition-txt">Activity for amusement only, especially among the young.</p>
+
+                <div class="blockquote" id="example-elem">
+                    <h3>Examples</h3>
+                    <p>Children Learn Through play</p>
+                </div>
+
+                <div class="blockquote" id="synonym-elem">
+                    <h3>Synonyms</h3>
+                    <p>play</p>
+                </div>
+
+                  <div class="blockquote" id="antonym-elem">
+                    <h3>Antonyms</h3>
+                    <p>some words</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+
+        <p>📖 Dictionary App | <a href="#">About</a> | <a href="#">Privacy</a></p>
+
+        <p class="credits">Powered by <a href="https://dictionaryapi.dev/" target="_blank">dictionaryapi.dev</a></p>
+
+        <p>&copy; Habeeb Iyiade</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
