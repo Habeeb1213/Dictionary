@@ -114,6 +114,14 @@ body.dark .nav-links a {
     cursor: pointer;
 }
 
+.switch {
+    cursor: pointer;
+}
+
+.switch i {
+    cursor: pointer;
+}
+
 .hamburger {
     display: none;
     font-size: 26px;
