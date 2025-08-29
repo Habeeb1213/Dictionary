@@ -159,7 +159,7 @@ input:focus + .slider {
 }
 
 input:checked + .slider::before {
-    transform: translateX(25px);
+    transform: translateX(19px);
 }
 
 main {
