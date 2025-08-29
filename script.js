@@ -82,28 +82,38 @@ soundButton.addEventListener("click", () => {
 
 const toggleSwitch = document.querySelector('.switch input');
 const logoImg = document.getElementById('logo-img');
+const themeIcon = document.getElementById('theme-icon'); // <i id="theme-icon" class="ri-moon-line"></i>
 
-
+// Check saved theme
 if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark');
     toggleSwitch.checked = true;
     logoImg.src = "images/logo-white.png"; 
+    themeIcon.classList.remove("ri-moon-line");
+    themeIcon.classList.add("ri-sun-line");
 } else {
     logoImg.src = "images/logo-black.png"; 
+    themeIcon.classList.remove("ri-sun-line");
+    themeIcon.classList.add("ri-moon-line");
 }
 
-
+// Toggle theme
 toggleSwitch.addEventListener('change', () => {
     if (toggleSwitch.checked) {
         document.body.classList.add('dark');
         localStorage.setItem('theme', 'dark');
         logoImg.src = "images/logo-white.png";
+        themeIcon.classList.remove("ri-moon-line");
+        themeIcon.classList.add("ri-sun-line");
     } else {
         document.body.classList.remove('dark');
         localStorage.setItem('theme', 'light');
         logoImg.src = "images/logo-black.png";
+        themeIcon.classList.remove("ri-sun-line");
+        themeIcon.classList.add("ri-moon-line");
     }
 });
+
 
 
 
